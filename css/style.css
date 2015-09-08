@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+}
+/*---------Nav---------*/
+nav {
+  background-color: black;
+  height: 2em;
+}
+nav li {
+  display: inline-block;
+  float: right;
+}
+
+/*-------Banner--------*/
+.banner {
+  display: flex;
+  background-image: url("/Users/kcoulter/Documents/portfolio-website/images/ksenia_banner.gif");
+  background-size: cover;
+  background-position: center;
+  height: 860px;
+  flex-direction: column;
+}
+.wrapper {
+  margin: auto;
+  border: 3px solid red;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+.wrapper h1 {
+  font-size: 100px;
+  font-family: 'Lora', serif;
+}
+.wrapper h2 {
+  font-family: 'Slabo 27px', serif;
+  font-size: 50px;
+  margin: 5px 0 25px 0;
+}
+.wrapper div {
+  display: inline;
+}
+div .button {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin: 10px;
+  padding: 10px 45px;
+  text-transform: uppercase;
+}
+
+/*------Portfolio------*/
+
+
+/*-------Media Queries--------*/
+@media (max-width: 580px) {
+  div .button {
+    display: block;
+  }
+}
