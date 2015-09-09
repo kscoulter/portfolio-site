@@ -93,10 +93,12 @@ nav li a{
 .portfolio {
   color: #5F5F5F;
   display: table;
+  width: 100%;
 }
 .portfolio img {
   height: 300px;
   width: 300px;
+  border-radius: 15px;
 }
 .portfolio h1 {
   font-size: 50px;
@@ -105,6 +107,7 @@ nav li a{
 .project {
   padding: 10px 30px;
   display: table-row;
+  width: 100%;
 }
 .project h2{
   font-size: 45px;
@@ -118,19 +121,21 @@ nav li a{
   width: 50%;
   display: table-cell;
   vertical-align: top;
-  padding: 0 30px;
+  padding: 20px 30px;
 }
 .project:nth-child(even){
   background-color: #EFEFEF;
 }
-.project:nth-child(odd){
-
+.project:nth-child(even) img{
+  float: right;
 }
-
-.project .col:nth-child(even){
-  border: 3px solid blue;
-  text-align: center;
+.col p {
+  text-align: left;
 }
+/*.col img{
+  border: 5px solid black;
+  margin-left: 50px;
+}*/
 
 /*-------Media Queries--------*/
 @media (max-width: 580px) {
