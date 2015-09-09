@@ -9,15 +9,15 @@ body {
 /*---------Nav---------*/
 nav {
   background-color: rgba(0, 0, 0, 0.7);
-  /*border: 2px solid white;*/
   width: 100%;
   position: fixed;
 }
-nav li {
+nav ul {
   float: right;
+}
+nav li {
   display: inline-block;
   color: white;
-  /*border: 2px solid white;*/
   padding: 5px 10px;
   font-size: 20px;
   text-transform: uppercase;
@@ -30,11 +30,11 @@ nav li a{
 /*-------Banner--------*/
 .banner {
   display: flex;
+  flex-direction: column;
   background-image: url("/Users/kcoulter/Documents/portfolio-website/images/ksenia_banner.gif");
   background-size: cover;
   background-position: center;
   height: 860px;
-  flex-direction: column;
 }
 .wrapper {
   margin: auto;
@@ -92,14 +92,56 @@ nav li a{
 /*------Portfolio------*/
 .portfolio {
   color: #5F5F5F;
+  display: table;
+}
+.portfolio img {
+  height: 300px;
+  width: 300px;
+}
+.portfolio h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.project {
+  padding: 10px 30px;
+  display: table-row;
+}
+.project h2{
+  font-size: 45px;
+  margin: 5px 0;
+  border-top: 3px solid #5F5F5F;
+}
+.project p {
+  font-size: 28px;
 }
 .col {
   width: 50%;
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 30px;
+}
+.project:nth-child(even){
+  background-color: #EFEFEF;
+}
+.project:nth-child(odd){
+
+}
+
+.project .col:nth-child(even){
+  border: 3px solid blue;
+  text-align: center;
 }
 
 /*-------Media Queries--------*/
 @media (max-width: 580px) {
   div .button {
     display: block;
+  }
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    width: 100%;
   }
 }
