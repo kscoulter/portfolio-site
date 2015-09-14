@@ -103,6 +103,7 @@ nav li a{
 .portfolio h1 {
   font-size: 50px;
   text-align: center;
+  display: table-caption;
 }
 .project {
   padding: 10px 30px;
@@ -126,18 +127,73 @@ nav li a{
 .project:nth-child(even){
   background-color: #EFEFEF;
 }
-.project:nth-child(even) img{
+.project:nth-child(even) .col{
+  float: left;
+  text-align: right;
+}
+.project:nth-child(even) .col h2 {
+  text-align: left;
+}
+.project:nth-child(odd) .col h2 {
+  text-align: left;
+}
+.project:nth-child(odd) .col{
   float: right;
+}
+.project .col:before{
+  display:block;
+  clear:both;
+  content:"";
 }
 .col p {
   text-align: left;
 }
-/*.col img{
-  border: 5px solid black;
-  margin-left: 50px;
-}*/
+
+/*----------Contact-----------*/
+.contact{
+  background-image: url("/Users/kcoulter/Documents/portfolio-website/images/bluemountainsbw.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  display: flex;
+  margin-top: 10px;
+}
+.contact .content{
+  margin: auto;
+  text-align: center;
+}
+.content h1 {
+  font-size: 60px;
+}
+.content p {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.gmail::before {
+  content: "\f0e0"
+}
+
+/*----------Footer------------*/
+footer {
+  height: 5em;
+  background-color: #0C0C0C;
+  display: flex;
+  flex-direction: column;
+}
+footer p {
+  margin: auto;
+  text-align: center;
+}
 
 /*-------Media Queries--------*/
+@media (max-width: 700px) {
+  .project .col{
+    display:block;
+    float:none !important;
+    width:auto;
+    text-align: center !important;
+  }
+}
 @media (max-width: 580px) {
   div .button {
     display: block;
@@ -145,8 +201,10 @@ nav li a{
   nav {
     text-align: center;
   }
-
   nav ul {
     width: 100%;
+  }
+  .portfolio .project .col h2{
+    text-align: center;
   }
 }
