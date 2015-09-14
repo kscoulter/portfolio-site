@@ -9,8 +9,8 @@ body {
 /*---------Nav---------*/
 nav {
   background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
   position: fixed;
+  width: 100%;
 }
 nav ul {
   float: right;
@@ -18,28 +18,34 @@ nav ul {
 nav li {
   display: inline-block;
   color: white;
-  padding: 5px 10px;
   font-size: 20px;
+  padding: 5px 10px;
   text-transform: uppercase;
 }
 nav li a{
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+}
+#resume::before {
+  content: "\f019";
+  font-family: FontAwesome;
+  font-size: 17px;
+  margin-right: 8px;
 }
 
 /*-------Banner--------*/
 .banner {
-  display: flex;
-  flex-direction: column;
   background-image: url("/Users/kcoulter/Documents/portfolio-website/images/ksenia_banner.gif");
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
   height: 860px;
 }
 .wrapper {
   margin: auto;
-  text-align: center;
   padding: 10px;
+  text-align: center;
 }
 .wrapper h1 {
   font-size: 100px;
@@ -57,12 +63,12 @@ nav li a{
   border: 1px solid white;
   border-radius: 5px;
   background-color: white;
-  color: black;
+  color: #0C0C0C;
+  font-size: 20px;
   margin: 10px;
   padding: 10px 16px;
-  text-transform: uppercase;
-  font-size: 20px;
   text-decoration: none;
+  text-transform: uppercase;
   /*position: relative;*/
 }
 .button::hover {
@@ -73,11 +79,9 @@ nav li a{
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
-  color: #000;
+  color: #0C0C0C;
   font-size: 20px;
   padding-right: 0.5em;
-  top: 10px;
-  left: 0;
 }
 .twitter::before {
   content: "\f099";
@@ -167,7 +171,7 @@ nav li a{
 }
 .content p {
   font-size: 30px;
-  margin-bottom: 20px;
+  padding: 5px 10px 45px 10px;
 }
 .gmail::before {
   content: "\f0e0"
@@ -193,8 +197,6 @@ footer p {
     width:auto;
     text-align: center !important;
   }
-}
-@media (max-width: 580px) {
   div .button {
     display: block;
   }
