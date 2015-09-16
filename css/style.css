@@ -77,9 +77,6 @@ nav li a{
   text-transform: uppercase;
   /*position: relative;*/
 }
-.button::hover {
-  cursor: pointer;
-}
 .button::before{
   font-family: FontAwesome;
   font-style: normal;
