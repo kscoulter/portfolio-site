@@ -41,7 +41,7 @@ nav li a{
 
 /*-------Banner--------*/
 .banner {
-  background-image: url("/Users/kcoulter/Documents/portfolio-website/images/ksenia_banner.gif");
+  background-image: url("../images/ksenia_banner.gif");
   background-size: cover;
   background-position: center;
   display: flex;
