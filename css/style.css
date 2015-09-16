@@ -6,6 +6,12 @@
 body {
   color: white;
 }
+body p {
+  font-family: 'Open Sans', sans-serif;
+}
+body h1, h2, h3, a {
+  font-family: 'Domine', serif;
+}
 /*---------Nav---------*/
 nav {
   background-color: rgba(0, 0, 0, 0.7);
@@ -19,7 +25,7 @@ nav li {
   display: inline-block;
   color: white;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   text-transform: uppercase;
 }
 nav li a{
@@ -64,7 +70,7 @@ nav li a{
   border-radius: 5px;
   background-color: white;
   color: #0C0C0C;
-  font-size: 20px;
+  font-size: 18px;
   margin: 10px;
   padding: 10px 16px;
   text-decoration: none;
@@ -80,7 +86,7 @@ nav li a{
   font-weight: normal;
   text-decoration: inherit;
   color: #0C0C0C;
-  font-size: 20px;
+  font-size: 18px;
   padding-right: 0.5em;
 }
 .twitter::before {
@@ -105,9 +111,13 @@ nav li a{
   border-radius: 15px;
 }
 .portfolio h1 {
-  font-size: 50px;
-  text-align: center;
+  color: #ECECEC;
   display: table-caption;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0C0C0C;
+  padding: 5px;
 }
 .project {
   padding: 10px 30px;
@@ -118,6 +128,10 @@ nav li a{
   font-size: 45px;
   margin: 5px 0;
   border-top: 3px solid #5F5F5F;
+}
+.project h3 {
+  padding-top: 30px;
+  font-size: 30px;
 }
 .project p {
   font-size: 28px;
@@ -135,10 +149,10 @@ nav li a{
   float: left;
   text-align: right;
 }
-.project:nth-child(even) .col h2 {
+.project:nth-child(even) .col h2, h3 {
   text-align: left;
 }
-.project:nth-child(odd) .col h2 {
+.project:nth-child(odd) .col h2, h3 {
   text-align: left;
 }
 .project:nth-child(odd) .col{
@@ -151,6 +165,9 @@ nav li a{
 }
 .col p {
   text-align: left;
+}
+i {
+  font-size: 50px;
 }
 
 /*----------Contact-----------*/
@@ -167,7 +184,8 @@ nav li a{
   text-align: center;
 }
 .content h1 {
-  font-size: 60px;
+  font-size: 55px;
+  text-transform: uppercase;
 }
 .content p {
   font-size: 30px;
