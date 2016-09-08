@@ -77,6 +77,9 @@ nav li a{
   text-transform: uppercase;
   /*position: relative;*/
 }
+.button:hover {
+  cursor: pointer;
+}
 .button::before{
   font-family: FontAwesome;
   font-style: normal;
@@ -88,6 +91,9 @@ nav li a{
 }
 .twitter::before {
   content: "\f099";
+}
+.medium::before {
+  content: "\f23a"
 }
 .github::before {
   content: "\f09b";
@@ -169,7 +175,7 @@ i {
 
 /*----------Contact-----------*/
 .contact{
-  background-image: url("/Users/kcoulter/Documents/portfolio-website/images/bluemountainsbw.jpg");
+  background-image: url("../images/bluemountainsbw.jpg");
   background-size: cover;
   background-position: center;
   height: 550px;
